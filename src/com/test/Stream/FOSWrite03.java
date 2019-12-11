@@ -6,13 +6,13 @@ import java.io.IOException;
 public class FOSWrite03 {
 
 	public static void main(String[] args) throws IOException {
-		 // Ê¹ÓÃÎÄ¼şÃû³Æ´´½¨Á÷¶ÔÏó
+		 // ä½¿ç”¨æ–‡ä»¶åç§°åˆ›å»ºæµå¯¹è±¡
         FileOutputStream fos = new FileOutputStream("fos.txt");    
-       // ×Ö·û´®×ª»»Îª×Ö½ÚÊı×é  
+       // å­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—èŠ‚æ•°ç»„  
        byte[] b = "abcde".getBytes();  
-       // Ğ´³ö´ÓË÷Òı2¿ªÊ¼£¬2¸ö×Ö½Ú¡£Ë÷Òı2ÊÇc£¬Á½¸ö×Ö½Ú£¬Ò²¾ÍÊÇcd¡£        
+       // å†™å‡ºä»ç´¢å¼•2å¼€å§‹ï¼Œ2ä¸ªå­—èŠ‚ã€‚ç´¢å¼•2æ˜¯cï¼Œä¸¤ä¸ªå­—èŠ‚ï¼Œä¹Ÿå°±æ˜¯cdã€‚        
         fos.write(b,2,2);
-       // ¹Ø±Õ×ÊÔ´  
+       // å…³é—­èµ„æº  
         fos.close();
 
 	}

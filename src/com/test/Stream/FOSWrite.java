@@ -5,18 +5,18 @@ import java.io.IOException;
 
 public class FOSWrite {
 	/**
-	 * £º write(int b) ·½·¨£¬Ã¿´Î¿ÉÒÔĞ´³öÒ»¸ö×Ö½ÚÊı
+	 * ï¼š write(int b) æ–¹æ³•ï¼Œæ¯æ¬¡å¯ä»¥å†™å‡ºä¸€ä¸ªå­—èŠ‚æ•°
 	 * @param args
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-	       // Ê¹ÓÃÎÄ¼şÃû³Æ´´½¨Á÷¶ÔÏó
+	       // ä½¿ç”¨æ–‡ä»¶åç§°åˆ›å»ºæµå¯¹è±¡
         FileOutputStream fos = new FileOutputStream("fos.txt");    
-       // Ğ´³öÊı¾İ  
-       fos.write(97); // Ğ´³öµÚ1¸ö×Ö½Ú  
-       fos.write(98); // Ğ´³öµÚ2¸ö×Ö½Ú  
-       fos.write(99); // Ğ´³öµÚ3¸ö×Ö½Ú  
-       // ¹Ø±Õ×ÊÔ´  
+       // å†™å‡ºæ•°æ®  
+       fos.write(97); // å†™å‡ºç¬¬1ä¸ªå­—èŠ‚  
+       fos.write(98); // å†™å‡ºç¬¬2ä¸ªå­—èŠ‚  
+       fos.write(99); // å†™å‡ºç¬¬3ä¸ªå­—èŠ‚  
+       // å…³é—­èµ„æº  
         fos.close();
 
 

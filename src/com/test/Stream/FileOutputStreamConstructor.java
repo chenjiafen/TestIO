@@ -6,17 +6,20 @@ import java.io.IOException;
 
 public class FileOutputStreamConstructor {
 	/**
-	 * public FileOutputStream(File file) £º´´½¨ÎÄ¼şÊä³öÁ÷ÒÔĞ´ÈëÓÉÖ¸¶¨µÄ File¶ÔÏó±íÊ¾µÄÎÄ¼ş¡£
-	 *  public FileOutputStream(String name) £º ´´½¨ÎÄ¼şÊä³öÁ÷ÒÔÖ¸¶¨µÄÃû³ÆĞ´ÈëÎÄ¼ş¡£
+	 * public FileOutputStream(File file) ï¼šåˆ›å»ºæ–‡ä»¶è¾“å‡ºæµä»¥å†™å…¥ç”±æŒ‡å®šçš„ Fileå¯¹è±¡è¡¨ç¤ºçš„æ–‡ä»¶ã€‚
+	 *  public FileOutputStream(String name) ï¼š åˆ›å»ºæ–‡ä»¶è¾“å‡ºæµä»¥æŒ‡å®šçš„åç§°å†™å…¥æ–‡ä»¶ã€‚
 	 * @param args
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		// Ê¹ÓÃFile¶ÔÏó´´½¨Á÷¶ÔÏó    
+		/**
+		 * å½“ä½ åˆ›å»ºä¸€ä¸ªæµå¯¹è±¡æ—¶ï¼Œå¿…é¡»ä¼ å…¥ä¸€ä¸ªæ–‡ä»¶è·¯å¾„ã€‚è¯¥è·¯å¾„ä¸‹ï¼Œå¦‚æœæ²¡æœ‰è¿™ä¸ªæ–‡ä»¶ï¼Œä¼šåˆ›å»ºè¯¥æ–‡ä»¶ã€‚å¦‚æœæœ‰è¿™ä¸ªæ–‡
+		 *ä»¶ï¼Œä¼šæ¸…ç©ºè¿™ä¸ªæ–‡ä»¶çš„æ•°æ®ã€‚
+		 */
+		// ä½¿ç”¨Fileå¯¹è±¡åˆ›å»ºæµå¯¹è±¡    
         File file = new File("a.txt");
         FileOutputStream fos = new FileOutputStream(file);
-     
-        // Ê¹ÓÃÎÄ¼şÃû³Æ´´½¨Á÷¶ÔÏó
+        // ä½¿ç”¨æ–‡ä»¶åç§°åˆ›å»ºæµå¯¹è±¡
         FileOutputStream fos01 = new FileOutputStream("b.txt");
 
 	}
